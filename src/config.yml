@@ -1,0 +1,8 @@
+site:
+    baseUrl: "http://localhost:3000/"
+    title: "CreaTECH Solutions"
+    navigation:
+        - label: "Home"
+          url: "/"
+        - label: "About"
+          url: "/about/"
