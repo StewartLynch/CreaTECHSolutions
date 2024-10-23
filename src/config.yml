@@ -3,6 +3,6 @@ site:
     title: "CreaTECH Solutions"
     navigation:
         - label: "Home"
-          url: "/"
+          url: "/CreaTECHSolutions"
         - label: "About"
-          url: "/about/"
+          url: "/CreaTECHSolutions/about/"
