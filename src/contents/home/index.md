@@ -1,7 +1,6 @@
 ---
 title: "Home" 
-description: "Welcome to the CreaTECH Solutions." 
-template: "index"
+description: "Welcome to the CreaTECH home page." 
 ---
 
 # Welcome to CreaTECH Solutions

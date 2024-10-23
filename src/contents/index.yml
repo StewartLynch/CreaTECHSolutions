@@ -1,0 +1,7 @@
+baseUrl: "https://stewartlynch.github.io/CreaTECHSolutions/"
+title: "CreaTECH Solutions"
+navigation:
+        - label: "Home"
+          url: "/"
+        - label: "About"
+          url: "/about/"
