@@ -4,5 +4,5 @@ site:
     navigation:
         - label: "Home"
           url: "/"
-        - label: "Eh!"
+        - label: "About"
           url: "/about/"
