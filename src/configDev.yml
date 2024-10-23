@@ -1,5 +1,5 @@
 site:
-    baseUrl: "https://stewartlynch.github.io/CreaTECHSolutions/"
+    baseUrl: "http://localhost:3000/"
     title: "CreaTECH Solutions"
     navigation:
         - label: "Home"
