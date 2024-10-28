@@ -5,3 +5,7 @@ navigation:
           url: "/"
         - label: "YouTube"
           url: "/youtube/"
+        - label: "My Apps"
+          url: "/apps/"
+        - label: "Blog"
+          url: "/blog/"

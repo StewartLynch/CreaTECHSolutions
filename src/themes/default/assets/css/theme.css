@@ -1,25 +1,134 @@
+body {
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    font-weight: normal;
+    color: #333; /* Default text color */
+    background-color: #f0f0f0; /* Default background color */
+}
+
+/* Reset for max width */
 header, footer, .page {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* Header styling */
 header {
-    text-align: center;
-    border-bottom: 1px dotted black;
-    padding-bottom: 16px;
+    display: flex;
+    align-items: center; /* Centers the title-nav container vertically with the logo */
+    padding: 10px 20px;
 }
+
+/* Logo styling with padding to the right */
+.logo {
+    max-width: 100px;
+    height: auto;
+    padding-right: 10px; /* Adds horizontal space between logo and title/nav */
+}
+
+/* Container for title and navigation */
+.title-nav-container {
+    display: flex;
+    flex-direction: column; /* Stacks title and nav vertically */
+    align-items: flex-start; /* Aligns title and nav to the left */
+}
+
+/* Styling for title */
+.title-nav-container h1 {
+    margin: 0;
+    padding-bottom: 10px; /* Space between title and navigation */
+}
+
+/* Styling for navigation links with orange and gray colors */
+nav {
+    display: flex;
+    gap: 10px; /* Adds space between links */
+}
+
+nav a {
+    background-color: #FFA500; /* Orange background */
+    color: white; /* White text color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #808080; /* Gray background on hover */
+    color: #FFA500; /* Orange text on hover */
+}
+
+nav a.active {
+    background-color: #808080; /* Gray background for active link */
+    color: #FFA500; /* Orange text color for active link */
+    border: 2px solid #FFA500; /* Optional border for active link */
+}
+
+/* Body and Footer link styling */
+a {
+    color: #FFA500; /* Orange color for links */
+    font-weight: bold;
+    text-decoration: underline; /* Underlined for distinction */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #808080; /* Gray color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Centered footer */
 footer {
     text-align: center;
+    padding: 16px 0;
+    color: #333; /* Default footer text color */
     border-top: 1px dotted black;
-    padding-top: 16px;
 }
-.page {
-    padding-top: 16px;
-    padding-bottom: 16px;
+
+/* Light Mode (Default) */
+@media (prefers-color-scheme: light) {
+    body {
+        color: #333; /* Dark text on light background */
+        background-color: #f0f0f0; /* Light background color */
+    }
+
+    footer {
+        color: #333; /* Default footer text color in light mode */
+    }
+
+    footer a {
+        color: #FFA500; /* Orange color for links in light mode */
+    }
+
+    footer a:hover {
+        color: #808080; /* Gray color on hover in light mode */
+        text-decoration: none;
+    }
 }
-header #logo img {
-    width: 836px;
-}
-body {
- font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-font-weight: normal;
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #f0f0f0; /* Light text on dark background */
+        background-color: #1a1a1a; /* Dark background color */
+    }
+
+    /* Footer and body links in dark mode */
+    footer {
+        color: #f0f0f0; /* Footer text color in dark mode */
+    }
+
+    footer a {
+        color: #FFA500; /* Orange color for links in dark mode */
+    }
+
+    footer a:hover {
+        color: #808080; /* Gray color on hover in dark mode */
+        text-decoration: none;
+    }
+
+    footer {
+        border-top-color: #777;
+    }
 }
