@@ -20,8 +20,6 @@ header #logo img {
     width: 836px;
 }
 body {
-  font-family: Serif;
-}
-h1 {
- font-family: Helvetica;
+ font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+font-weight: normal;
 }
