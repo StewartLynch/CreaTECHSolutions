@@ -17,5 +17,11 @@ footer {
     padding-bottom: 16px;
 }
 header #logo img {
-    width: 64px;
+    width: 836px;
+}
+body {
+  font-family: Serif;
+}
+h1 {
+ font-family: Helvetica;
 }
