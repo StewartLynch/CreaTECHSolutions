@@ -1,134 +1,135 @@
+/* Global Color Variables */
+:root {
+    --color-text: #333;
+    --color-background-light: #f0f0f0;
+    --color-background-dark: #1a1a1a;
+    --color-orange: #FFA500;
+    --color-gray: #808080;
+    --color-white: #ffffff;
+    --color-border-dark: #777;
+}
+
+/* General Styles */
 body {
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: normal;
-    color: #333; /* Default text color */
-    background-color: #f0f0f0; /* Default background color */
+    color: var(--color-text);
+    background-color: var(--color-background-light);
 }
 
-/* Reset for max width */
+/* Centered Layout Container */
 header, footer, .page {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Header styling */
+/* Header Styling */
 header {
     display: flex;
-    align-items: center; /* Centers the title-nav container vertically with the logo */
+    align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap; /* Allow header to wrap on smaller screens */
 }
 
-/* Logo styling with padding to the right */
+/* Logo Styling */
 .logo {
     max-width: 100px;
-    height: auto;
-    padding-right: 10px; /* Adds horizontal space between logo and title/nav */
+    padding-right: 10px;
 }
 
-/* Container for title and navigation */
+/* Title and Navigation Container */
 .title-nav-container {
     display: flex;
-    flex-direction: column; /* Stacks title and nav vertically */
-    align-items: flex-start; /* Aligns title and nav to the left */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* Styling for title */
 .title-nav-container h1 {
-    margin: 0;
-    padding-bottom: 10px; /* Space between title and navigation */
+    margin: 0 0 10px 0;
 }
 
-/* Styling for navigation links with orange and gray colors */
+/* Navigation Links */
 nav {
     display: flex;
-    gap: 10px; /* Adds space between links */
+    gap: 10px;
+}
+
+/* Adjust navigation layout for mobile screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for each link */
+    }
+
+    nav a {
+        text-align: center; /* Center-align links for better readability */
+        width: 100%; /* Make links full width */
+    }
 }
 
 nav a {
-    background-color: #FFA500; /* Orange background */
-    color: white; /* White text color */
-    text-decoration: none;
+    background-color: var(--color-orange);
+    color: var(--color-white);
     font-weight: bold;
+    text-decoration: none;
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background-color: #808080; /* Gray background on hover */
-    color: #FFA500; /* Orange text on hover */
+    background-color: var(--color-gray);
+    color: var(--color-orange);
 }
 
 nav a.active {
-    background-color: #808080; /* Gray background for active link */
-    color: #FFA500; /* Orange text color for active link */
-    border: 2px solid #FFA500; /* Optional border for active link */
+    background-color: var(--color-gray);
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
 }
 
-/* Body and Footer link styling */
+/* Global Link Styling */
 a {
-    color: #FFA500; /* Orange color for links */
+    color: var(--color-orange);
     font-weight: bold;
-    text-decoration: underline; /* Underlined for distinction */
+    text-decoration: underline;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #808080; /* Gray color on hover */
-    text-decoration: none; /* Remove underline on hover */
+    color: var(--color-gray);
+    text-decoration: none;
 }
 
-/* Centered footer */
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 16px 0;
-    color: #333; /* Default footer text color */
-    border-top: 1px dotted black;
+    color: var(--color-text);
+    border-top: 1px dotted var(--color-text);
 }
 
-/* Light Mode (Default) */
+/* Light Mode */
 @media (prefers-color-scheme: light) {
-    body {
-        color: #333; /* Dark text on light background */
-        background-color: #f0f0f0; /* Light background color */
+    body, footer {
+        color: var(--color-text);
+        background-color: var(--color-background-light);
     }
-
-    footer {
-        color: #333; /* Default footer text color in light mode */
-    }
-
     footer a {
-        color: #FFA500; /* Orange color for links in light mode */
+        color: var(--color-orange);
     }
-
     footer a:hover {
-        color: #808080; /* Gray color on hover in light mode */
-        text-decoration: none;
+        color: var(--color-gray);
     }
 }
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-    body {
-        color: #f0f0f0; /* Light text on dark background */
-        background-color: #1a1a1a; /* Dark background color */
+    body, footer {
+        color: var(--color-background-light);
+        background-color: var(--color-background-dark);
     }
-
-    /* Footer and body links in dark mode */
     footer {
-        color: #f0f0f0; /* Footer text color in dark mode */
-    }
-
-    footer a {
-        color: #FFA500; /* Orange color for links in dark mode */
-    }
-
-    footer a:hover {
-        color: #808080; /* Gray color on hover in dark mode */
-        text-decoration: none;
-    }
-
-    footer {
-        border-top-color: #777;
+        border-top-color: var(--color-border-dark);
     }
 }
