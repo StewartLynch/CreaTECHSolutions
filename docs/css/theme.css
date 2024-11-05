@@ -131,5 +131,21 @@ footer {
     }
     footer {
         border-top-color: var(--color-border-dark);
-    }
+/*    }*/
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li img {
+  width: auto;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;             /* Removes default padding */
+  margin: 0;     
 }

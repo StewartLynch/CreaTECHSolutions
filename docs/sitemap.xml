@@ -1,12 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://stewartlynch.github.io/CreaTECHSolutions/</loc>
-        <lastmod>2024-10-28</lastmod>
+        <lastmod>2024-11-05</lastmod>
+        <loc>https://stewartlynch.github.io/CreaTECHSolutions/StewartLynchYT/</loc>
+        <lastmod>2024-11-05</lastmod>
         <loc>https://stewartlynch.github.io/CreaTECHSolutions/apps/</loc>
-        <lastmod>2024-10-28</lastmod>
+        <lastmod>2024-11-05</lastmod>
         <loc>https://stewartlynch.github.io/CreaTECHSolutions/blog/</loc>
-        <lastmod>2024-10-28</lastmod>
+        <lastmod>2024-11-05</lastmod>
         <loc>https://stewartlynch.github.io/CreaTECHSolutions/youtube/</loc>
-        <lastmod>2024-10-28</lastmod>
+        <lastmod>2024-11-05</lastmod>
     </url>
 </urlset>
